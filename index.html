@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+</head>
+
+<body class="mxy-2">
+    <header>
+        <div class="p-3 mb-2 bg-info text-center text-dark">
+            <h1>
+                Weather Dashboard
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="card" style="width: 18rem;">
+            <h3 id="search-bar" class="title is-3 text-center">Search for a City:</h3>
+            <div class="container text-center">
+                <input type="text" id="search-input" placeholder="Your City">
+
+                <button type="submit" class="button is-primary" id="search-button">Search</button>
+
+            </div>
+            <div class="section" id="card-section" style="justify-content: space-evenly;">
+                <div class="columns">
+                    <div class="column box m-1 p-3 is-one-third past-searches">
+                        <!-- past searches append here -->
+                        <div id="search-history-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card container text-center">
+            <div class="col-12">
+                <div class="text-center"id="weather-container">
+                    <h1 id="city-title"></h1>
+                    <h2 id="currentDay"></h2>
+                    <div class="card-content pb-0">
+                    <img class="image is-32x32" id="current-icon"></img>
+                </div>
+            </div>
+                <div>
+                    <p id="current-temp"></p>
+                </div>
+                <div>
+                    <p id="current-humidity"></p>
+                </div>
+                <div>
+                    <p id="current-wind-speed"></p>
+                </div>
+            </div>
+        </section>
+        <section class="row" style="justify-content: space-evenly;">
+            <div class="card container m-2 col-2 text-center">
+                <div>
+                    <img id="day1-icon">
+                </div>
+                <div>
+                    <h3 id="day1-date"></h3>
+                </div>
+                <div>
+                    <p id="day1-temp"></p>
+                </div>
+                <div>
+                    <p id="day1-humidity"></p>
+                </div>
+                <div>
+                    <p id="day1-wind-speed"></p>
+                </div>
+            </div>
+            <div class="card m-2 col-2 text-center">
+                <div>
+                    <img id="day2-icon">
+                </div>
+                <div>
+                    <h3 id="day2-date"></h3>
+                </div>
+                <div>
+                    <p id="day2-temp"></p>
+                </div>
+                <div>
+                    <p id="day2-humidity"></p>
+                </div>
+                <div>
+                    <p id="day2-wind-speed"></p>
+                </div>
+            </div>
+            <div class="card m-2 col-2 text-center">
+                <div>
+                    <img id="day3-icon">
+                </div>
+                <div>
+                    <h3 id="day3-date"></h3>
+                </div>
+                <div>
+                    <p id="day3-temp"></p>
+                </div>
+                <div>
+                    <p id="day3-humidity"></p>
+                </div>
+                <div>
+                    <p id="day3-wind-speed"></p>
+                </div>
+            </div>
+            <div class="card m-2 col-2 text-center">
+                <div>
+                    <img id="day4-icon">
+                </div>
+                <div>
+                    <h3 id="day4-date"></h3>
+                </div>
+                <div>
+                    <p id="day4-temp"></p>
+                </div>
+                <div>
+                    <p id="day4-humidity"></p>
+                </div>
+                <div>
+                    <p id="day4-wind-speed"></p>
+                </div>
+            </div>
+            <div class="card m-2 col-2 text-center">
+                <div>
+                    <img id="day5-icon">
+                </div>
+                <div>
+                    <h3 id="day5-date"></h3>
+                </div>
+                <div>
+                    <p id="day5-temp"></p>
+                </div>
+                <div>
+                    <p id="day5-humidity"></p>
+                </div>
+                <div>
+                    <p id="day5-wind-speed"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
