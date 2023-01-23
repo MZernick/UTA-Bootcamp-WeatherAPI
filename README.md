@@ -90,6 +90,14 @@ This Challenge is graded based on the following criteria:
 
 * Repository contains quality readme file with description, screenshot, and link to deployed application.
 
+## Collaborators: 3
+
+* Anita Banh
+
+* Jessica Ortega
+
+* Neha Shetty
+
 ## Review
 
 You are required to submit BOTH of the following for review:
